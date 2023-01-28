@@ -1,0 +1,129 @@
+body{
+    background:rgb(0, 0, 0);
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */ 
+
+header{
+    background-image: url("images/background.jpg");
+    background-size: 100%;
+    background-position: center;
+    padding: 20px;
+    height: 500px;
+    text-align: center;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header a{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin-top: 0px;
+    line-height: 0px;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 150%;
+}
+
+header .mobile{
+    display: none;
+}
+
+header .logo a{
+    background-image: url("images/logo.png");
+    background-size: 200px 100px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: -50px;
+    text-indent: -9999999px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/*responsive rules*/
+
+@media screen and (max-width: 745px) {
+    header{
+        height: 400px;
+    }
+
+    header .mobile{
+        display: inline-block;
+    }
+
+    header .logo a{
+        top:0px;
+    }
+    
+    header .desktop{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1150px){
+    header{
+        background-position: -20px -200px ;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 522px){
+    header{
+        height: 200px;
+    }
+}
+
+/*features*/
+
+.features{
+    background: rgb(255, 255, 255);
+    color: rgb(165, 165, 165);
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.features figure{
+    margin: auto;
+    width: 100px;
+    text-transform: uppercase;
+    display: grid;
+    text-align: center;
+}
+
+.features figure img{
+    border: 1px solid white;
+    border-radius: 20%;
+    box-shadow: gray 0px 0px 10px;
+    width: 200px;
+}
+
+/*responsive rules*/
+
+/*footer*/
+
+footer{
+    background: black;
+    padding: 20px 20px;
+    color: grey;
+    text-align: center;
+    font-size: 15px;
+}
+
